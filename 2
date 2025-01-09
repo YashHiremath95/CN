@@ -58,3 +58,44 @@ printf("%c\t\t%c\t\t%d\n",j+65,table[i].nextnode[j]+65,table[i].dist[j]);
 } 
 return 0; 
 }
+
+
+output
+enter the no of vertices:    4
+enter the cost matrix:
+0 2 99 6
+2 0 3 8
+99 3 0 5
+6 8 5 0
+
+state value for router A 
+
+destnode	nextnode	distance
+A		A		0
+B		B		2
+C		B		5
+D		A		6
+
+state value for router B 
+
+destnode	nextnode	distance
+A		A		2
+B		B		0
+C		C		3
+D		C		8
+
+state value for router C 
+
+destnode	nextnode	distance
+A		B		5
+B		B		3
+C		C		0
+D		D		5
+
+state value for router D 
+
+destnode	nextnode	distance
+A		A		6
+B		B		8
+C		C		5
+D		D		0
